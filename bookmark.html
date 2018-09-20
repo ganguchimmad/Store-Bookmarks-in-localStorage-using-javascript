@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     <title>Bookmarks</title>
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="css/materialize.min.css"
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <style>
+		.card-panel{
+			overflow:auto;
+		}
+	  </style>
+    </head>
+
+    <body onload="fetchbookmark()">
+		<div class="container">
+			<div class="row">
+				<div class="col s2"></div>
+				<div class="col s8">
+					<form id="myForm" action="#">
+						<div class="divider"></div>
+						<div class="card-panel center">
+							<h4>Bookmark Your Favorite Sites</h4>
+							<div class="input-field">
+								<label for="sitename">Site Name</label>
+								<input type="text" id="sitename" class="validate"></input>
+							</div>
+							
+							<div class="input-field">
+								<label for="siteurl">Site URL</label>
+								<input type="url" id="siteurl" class="validate"></input>
+							</div>
+							
+							<button type="submit" class="btn waves-effect" >Submit</button>
+						</div>
+						<div class="divider"></div>
+						<div class="card-panel">
+							<div id="bookmarkresult"></div>
+						</div>
+						
+						
+						<div class="divider"></div>
+						<footer class="footer center">Copyright by gangu @2018</footer>
+						
+					</form>
+				</div>
+				<div class="col s2"></div>
+			</div>
+			
+		</div>
+	
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/bookmark.js"></script>
+    </body>
+  </html>
